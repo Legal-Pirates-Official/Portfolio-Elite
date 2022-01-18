@@ -1,0 +1,130 @@
+.header {
+  position: fixed;
+  position: -webkit-sticky;
+  width: 80px;
+  height: 70px;
+  top: 0%;
+  right: 10%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.li1 {
+  position: relative;
+  width: 60%;
+  height: 6px;
+  background: #000;
+  margin: 3px;
+  list-style-type: none;
+  border-radius: 3px;
+}
+
+.li2 {
+  position: relative;
+  width: 60%;
+  height: 6px;
+  background: #000;
+  margin: 3px;
+  list-style-type: none;
+  border-radius: 3px;
+}
+
+.li3 {
+  position: relative;
+  width: 60%;
+  height: 6px;
+  background: #000;
+  margin: 3px;
+  list-style-type: none;
+  border-radius: 3px;
+}
+
+.header:hover {
+  cursor: pointer;
+}
+
+.navbar {
+  position: fixed;
+  height: 0vh;
+  width: 0%;
+  top: 0;
+  z-index: 13;
+  background: #000;
+  transform: rotate(-45deg) translate(100%, -100%);
+  transition: all 0.7s;
+}
+
+.navlogo {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  bottom: 0;
+  right: 5%;
+}
+
+.navright {
+  position: relative;
+  background: rgb(255, 255, 255);
+  height: 0%;
+  width: 0%;
+  clip-path: polygon(0 0, 100% 0, 34% 100%, 0% 100%);
+  transform: rotate(45deg) translate(-100%, 50%);
+  z-index: 13;
+  transition: all 1s;
+  display: flex;
+  align-items: center;
+}
+
+.navright ul {
+  position: relative;
+  display: flex;
+  height: 60%;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.navright ul li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  font-size: 1.7rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.navright ul li:hover {
+  cursor: pointer;
+  transform: translateX(10px);
+}
+
+.closebtn {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+  z-index: 17;
+}
+
+.closebtn:hover {
+  cursor: pointer;
+}
+
+.active {
+  transform: rotate(0deg) translate(0%, 0%) !important;
+  height: 100vh;
+  width: 100%;
+}
+
+.active2 {
+  transform: rotate(0deg) translate(0%, 0%) !important;
+  height: 100%;
+  width: 100%;
+}

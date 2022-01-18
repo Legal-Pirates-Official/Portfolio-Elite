@@ -13,16 +13,17 @@ h1 {
 
 p,
 a {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.3rem;
-  font-weight: 700;
+  /* font-weight: 400; */
+  letter-spacing: 1px;
 }
 
 /* section1 */
 .section1 {
   position: relative;
   background-color: rgb(255, 255, 255);
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -49,6 +50,8 @@ a {
   height: 70%;
   display: flex;
 }
+/* bottombg */
+
 /* span */
 .section1right {
   position: relative;
@@ -99,6 +102,7 @@ a {
   padding: 5px;
   transition: all 0.5s;
   overflow: hidden;
+  padding: 10px;
 }
 
 .anchcor::before {
@@ -108,6 +112,9 @@ a {
   height: 100%;
   color: white;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #5a35de;
   top: 100%;
   right: 100%;
@@ -252,7 +259,7 @@ a {
   position: relative;
   width: 40%;
   font-size: 6rem;
-  margin-right: 2%;
+  margin-right: 6%;
 }
 
 .worktopright {
@@ -266,6 +273,7 @@ a {
 }
 
 .worktopright p {
+  position: relative;
   width: 50%;
   text-align: justify;
   font-size: 1.2rem;
@@ -324,47 +332,255 @@ a {
 
 .grid2 {
   grid-area: grid2;
-  background: rgb(219, 82, 82);
+  /* background: rgb(219, 82, 82); */
 }
 
 .grid3 {
   grid-area: grid3;
-  background: rgb(35, 199, 240);
+  /* background: rgb(35, 199, 240); */
+  background: #000;
 }
 
 .grid4 {
   grid-area: grid4;
-  background: rgb(219, 38, 38);
+  /* background: rgb(219, 38, 38); */
 }
 
 .grid5 {
   grid-area: grid5;
-  background: rgb(176, 17, 240);
+  /* background: rgb(176, 17, 240); */
+  background: #000;
 }
 
 .grid6 {
   grid-area: grid6;
-  background: rgb(181, 228, 13);
+  /* background: rgb(181, 228, 13); */
 }
 
 .grid7 {
   grid-area: grid7;
-  background: rgb(177, 61, 100);
-
+  /* background: rgb(177, 61, 100); */
+  background: #000;
 }
 
 .grid8 {
   grid-area: grid8;
-  background: rgb(29, 59, 224);
+  /* background: rgb(29, 59, 224); */
 }
 
 .grid9 {
   grid-area: grid9;
-  background: rgb(216, 203, 24);
-
+  /* background: rgb(216, 203, 24); */
+  background: #000;
 }
 
+.section4 {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
 
-.section4{
-  
+.section4left {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section4left p {
+  width: 70%;
+  text-align: right;
+  margin: 4% 0 0% 0%;
+}
+
+.section4right {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section4right p {
+  width: 70%;
+  text-align: left;
+  margin: 4% 0 0% 0%;
+}
+
+/* button */
+.anchcor2 {
+  position: relative;
+  text-decoration: none;
+  border: 2px solid #5a35de;
+  padding: 5px;
+  transition: all 0.5s;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.anchcor2::before {
+  content: "Contact Me";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5a35de;
+  top: 100%;
+  right: 100%;
+  transform: rotate(45deg) translate(0%, -50%);
+  transition: all 1.4s;
+}
+
+.anchcor2::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 50%;
+  background: rgb(255, 255, 255, 0.5);
+  top: 100%;
+  left: 100%;
+  transform: rotate(-45deg) translate(0%, -50%);
+  transition-duration: 0.1s;
+  /* transition-delay: 1s; */
+}
+
+.anchcor2:hover {
+  border: 2px solid #5a35de;
+  cursor: pointer;
+}
+
+.anchcor2:hover::after {
+  top: 46%;
+  left: -149%;
+  transition-duration: 1.7s;
+  transition-delay: 1s;
+}
+
+.anchcor2:hover::before {
+  top: 0%;
+  right: 0%;
+  transform: rotate(0deg) translate(0%, 0%);
+  transition: all 1.4s;
+}
+
+.section4right .anchcor2 {
+  margin-top: 4%;
+}
+
+/* footer */
+.footer {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 0, 0);
+}
+
+.footermain {
+  position: relative;
+  width: 95%;
+  height: 85%;
+  background: rgba(255, 255, 255, 0.308);
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "footerarea1 footerarea2 footerarea3";
+}
+/* footer first part */
+.footerarea1 {
+  grid-area: footerarea1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerarea1 h2{
+  position: relative;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  /* color: #5a35de; */
+  color: #f4ece2;
+  margin-bottom: 2%;
+}
+
+.footerarea1 img{
+  position: relative;
+  height: 45px;
+  width: 45px;
+}
+
+.footerline1{
+  position: absolute;
+  width: 4px;
+  height: 80%;
+  background: #5a35de;
+  right: 0;
+  transform: rotate(-20deg);
+}
+
+.footerarea2 {
+  grid-area: footerarea2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lplogo{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+}
+
+.footerarea3 {
+  grid-area: footerarea3;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerarea3 h1{
+  color: #f4ece2;
+  letter-spacing: 3px;
+}
+
+.footerarea3 li{
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 15% 0;
+}
+
+.footerline2 {
+  position: absolute;
+  width: 4px;
+  height: 80%;
+  background: #5a35de;
+  left: 0;
+  transform: rotate(20deg);
 }
